@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="Home">
       {/* Presentacion */}
-      <div className="w-full flex flex-col text-center md:text-left py-10 px-10">
+      <div className="w-full flex flex-col text-center md:text-left pt-10 pb-5 px-10">
         <h1 className="text-4xl">Mauricio Monzón</h1>
         <div className="py-6 flex flex-col">
           <span className="text-3xl">Yo soy </span>
