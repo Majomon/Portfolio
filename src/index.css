@@ -46,10 +46,10 @@
     @apply w-full h-full px-4 py-6 md:p-6 text-center sm:text-start  dark:bg-slate-800;
   }
   .Proyects {
-    @apply w-full h-full px-4 py-12 md:p-20 text-center sm:text-start  dark:bg-slate-800;
+    @apply w-full h-full px-4 py-6 md:p-20 text-center sm:text-start  dark:bg-slate-800;
   }
   .Contact {
-    @apply w-full h-full px-4 py-12 md:p-20 flex flex-col items-center  dark:bg-slate-800;
+    @apply w-full h-full px-4 py-6 md:p-20 flex flex-col items-center  dark:bg-slate-800;
   }
   .Footer {
     @apply w-full h-36 lg:h-28 p-6 flex flex-col lg:flex-row justify-center lg:justify-between items-center  dark:bg-slate-800;

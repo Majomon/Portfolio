@@ -49,7 +49,7 @@ const projects = [
 const Proyects = () => {
   return (
     <div className="Proyects">
-      <div className="w-full flex flex-col items-center sm:items-start">
+      <div className="w-full flex flex-col items-center">
         <h2 className="w-72 text-center text-yellow-400 dark:text-yellow-400 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
           Proyectos
         </h2>
@@ -60,7 +60,7 @@ const Proyects = () => {
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", duration: 1 }}
-            className="relative group flex flex-col justify-center items-center rounded-lg border-none hover:bg-slate-900"
+            className="relative mx-2 group flex flex-col justify-center items-center rounded-lg  hover:bg-slate-900  border-2 border-slate-300 dark:border-yellow-400"
             key={index}
           >
             <img
@@ -70,7 +70,7 @@ const Proyects = () => {
             />
             {project.url_github && (
               <>
-                <motion.h2 className="absolute opacity-0 pl-2 select-none group-hover:opacity-100 text-white border-l-8 border-spring-green-700">
+                <motion.h2 className="absolute opacity-0 pl-2 select-none group-hover:opacity-100 text-white border-l-8 border-yellow-400">
                   {project.name}
                 </motion.h2>
 
