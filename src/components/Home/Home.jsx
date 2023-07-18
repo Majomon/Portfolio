@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="Home">
       {/* Presentacion */}
-      <div className="w-full flex flex-col text-center md:text-left pt-10 pb-5 px-10">
+      <div className="w-5/12 flex flex-col text-center md:text-left pt-10 pb-5 px-10">
         <h1 className="text-4xl">Mauricio Monzón</h1>
         <div className="py-6 flex flex-col">
           <span className="text-3xl">Yo soy </span>
@@ -158,7 +158,7 @@ const Home = () => {
       </div>
 
       {/* Perfil Libreria Framer*/}
-      <div className="w-full hidden md:flex justify-center md:m-0 my-10">
+      <div className="w-5/12 hidden md:flex justify-center md:m-0 my-10">
         <motion.img
           initial={{
             borderRadius: "60% 40% 30% 70%/60% 30% 70% 40%",
