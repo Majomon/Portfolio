@@ -45,7 +45,7 @@
   .Skills {
     @apply w-full h-full px-4 py-6 md:p-6 text-center sm:text-start;
   }
-  .Work {
+  .Proyects {
     @apply w-full h-full px-4 py-12 md:p-20 text-center sm:text-start;
   }
   .Contact {

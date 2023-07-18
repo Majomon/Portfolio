@@ -3,9 +3,9 @@ import Logo from "../../assets/portfolio.png";
 import { useEffect, useState } from "react";
 
 const options = [
-  { name: "Inicio", to: "Inicio" },
+  { name: "Inicio", to: "Home" },
   { name: "Skills", to: "Skills" },
-  { name: "Proyectos", to: "Proyectos" },
+  { name: "Proyectos", to: "Proyects" },
   { name: "Contacto", to: "Contacto" },
 ];
 

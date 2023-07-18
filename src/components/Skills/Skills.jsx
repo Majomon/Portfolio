@@ -45,7 +45,7 @@ const Skills = () => {
           <motion.div
             key={index}
             whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 500 }}
+            transition={{ type: "spring", stiffness: 1000 }}
             className="w-32 h-32 flex items-center justify-center p-3 bg-black dark:bg-white rounded-full cursor-pointer hover:shadow-[0_0_12px_#000] dark:hover:shadow-[0_0_12px_#fff]"
           >
             <motion.img src={icon.img} alt={icon.name} className="w-20" />
