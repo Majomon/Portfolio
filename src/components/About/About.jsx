@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="About">
       <div className="w-10/12">
-        <h2 className="text-center text-yellow-400 dark:text-yellow-400 text-6xl pb-6">
+        <h2 className="w-72 text-center text-yellow-400 dark:text-yellow-400 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
           Sobre mí
         </h2>
         <p>
@@ -20,7 +20,7 @@ function About() {
           nuevos desafíos.
         </p>
       </div>
-      <div className="w-10/12 flex flex-col py-16 justify-start lg:flex-row">
+      <div className="w-10/12 flex flex-col py-8 justify-start lg:flex-row">
         <div className="w-11/12 mx-auto my-10 lg:w-1/2 flex flex-col lg:mr-10">
           <h2 className="text-center lg:text-left text-yellow-400 dark:text-yellow-400 text-3xl pb-6">
             Datos Personales
