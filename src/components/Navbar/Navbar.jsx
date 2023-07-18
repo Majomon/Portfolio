@@ -7,7 +7,7 @@ const options = [
   { name: "Skills", to: "Skills" },
   { name: "Sobre mí", to: "About" },
   { name: "Proyectos", to: "Proyects" },
-  { name: "Contacto", to: "Contacto" },
+  { name: "Contacto", to: "Contact" },
 ];
 
 const Navbar = () => {
