@@ -50,15 +50,16 @@ const Proyects = () => {
   return (
     <div className="Proyects">
       <div className="w-full flex flex-col items-center sm:items-start">
-        <h1 className="w-80 mb-4 border-b-8 border-spring-green-600">
-          Proyectos recientes
-        </h1>
+        <h2 className="w-72 text-center text-yellow-400 dark:text-yellow-400 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
+          Proyectos
+        </h2>
+        <h4 className="pb-8 text-center ">Algunos de mis trabajos recientes</h4>
       </div>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project, index) => (
           <motion.div
             whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", duration: 0.3 }}
+            transition={{ type: "spring", duration: 1 }}
             className="relative group flex flex-col justify-center items-center rounded-lg border-none hover:bg-slate-900"
             key={index}
           >
@@ -76,7 +77,7 @@ const Proyects = () => {
                 {/* Boton Github */}
                 <motion.button
                   whileHover={{ scale: 1.1 }}
-                  transition={{ type: "spring", duration: 0.3 }}
+                  transition={{ type: "spring", duration: 3 }}
                   className="absolute opacity-0 group-hover:opacity-100 left-0 bottom-0 m-4 hover:bg-white/70 stroke-white hover:stroke-black hover:dark:stroke-black rounded-full p-1"
                   type="button"
                 >
