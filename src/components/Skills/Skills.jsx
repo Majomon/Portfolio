@@ -32,8 +32,8 @@ const techsIcons = [
 const Skills = () => {
   return (
     <div className="Skills">
-      <div className="w-10/12 flex flex-col items-center text-center mx-auto">
-        <h1 className="w-72 text-center text-yellow-400 dark:text-yellow-400 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
+      <div className="w-11/12 flex flex-col items-center text-center mx-auto">
+        <h1 className="w-64 text-center text-yellow-400 dark:text-yellow-400 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
           Skills
         </h1>
         <h4 className="w-full pb-8">
