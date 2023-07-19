@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <div className="Home">
       {/* Presentacion */}
-      <div className="w-5/12 flex flex-col text-center md:text-left pt-10 pb-5 px-10">
-        <h1 className="text-4xl">Mauricio Monzón</h1>
+      <div className="w-11/12 md:w-5/12 flex flex-col text-center md:text-left pt-10 pb-5 px-6">
+        <h1 className="text-4xl">Mi nombre es Mauricio Monzón</h1>
         <div className="py-6 flex flex-col">
-          <span className="text-3xl">Yo soy </span>
+          <span className="text-3xl">Soy </span>
           <TypeAnimation
             sequence={["FRONTEND DEVELOPER", 2000, "BACKEND DEVELOPER", 2000]}
             speed={50}
@@ -27,10 +27,10 @@ const Home = () => {
         </h4>
 
         {/* Social Media */}
-        <div className="w-full h-14 mt-4 mb-10 flex justify-center items-center">
-          <ul className="w-full flex flex-row justify-center md:justify-start space-x-12 stroke-black dark:stroke-white">
+        <div className="w-full h-14 mt-4 mb-10 mx-auto flex justify-center items-center">
+          <ul className="w-full flex flex-row justify-between md:justify-start stroke-black dark:stroke-white">
             {/* Linkedin */}
-            <li>
+            <li className=" md:ml-10">
               <a
                 href="https://www.linkedin.com/in/mauricio-monzon/"
                 target="_blank"
@@ -40,8 +40,8 @@ const Home = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-brand-linkedin scale-150"
-                    width="35"
-                    height="35"
+                    width="30"
+                    height="30"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     fill="none"
@@ -58,7 +58,7 @@ const Home = () => {
               </a>
             </li>
             {/* Youtube */}
-            <li>
+            <li className=" md:ml-10">
               <a
                 href="https://www.youtube.com/@consollo6692"
                 target="_blank"
@@ -68,8 +68,8 @@ const Home = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-brand-youtube"
-                    width="35"
-                    height="35"
+                    width="30"
+                    height="30"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     fill="none"
@@ -84,7 +84,7 @@ const Home = () => {
               </a>
             </li>
             {/* Github */}
-            <li>
+            <li className=" md:ml-10">
               <a
                 href="https://github.com/Majomon"
                 target="_blank"
@@ -94,8 +94,8 @@ const Home = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-brand-github"
-                    width="35"
-                    height="35"
+                    width="30"
+                    height="30"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     fill="none"
@@ -109,7 +109,7 @@ const Home = () => {
               </a>
             </li>
             {/* Instagram */}
-            <li>
+            <li className=" md:ml-10">
               <a
                 href="https://www.instagram.com/maurimonzon_j/"
                 target="_blank"
@@ -119,8 +119,8 @@ const Home = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-brand-instagram"
-                    width="35"
-                    height="35"
+                    width="30"
+                    height="30"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     fill="none"
