@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 
 const options = [
   { name: "Inicio", to: "Home" },
-  { name: "Skills", to: "Skills" },
   { name: "Sobre mí", to: "About" },
+  { name: "Skills", to: "Skills" },
   { name: "Proyectos", to: "Proyects" },
   { name: "Contacto", to: "Contact" },
 ];

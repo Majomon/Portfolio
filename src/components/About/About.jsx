@@ -1,12 +1,13 @@
 import anime from "../../assets/anime.png";
-import gaming from "../../assets/gaming-pc.png";
+import gaming from "../../assets/gaming.png";
 import viaje from "../../assets/viajes.png";
+import cocina from "../../assets/cocina.png";
 
 function About() {
   return (
     <div className="About">
-      <div className="w-10/12">
-        <h2 className="w-72 text-center text-yellow-400 dark:text-yellow-400 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
+      <div className="w-10/12 md:w-9/12">
+        <h2 className="w-64 text-center text-yellow-400 dark:text-yellow-400 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
           Sobre mí
         </h2>
         <p>
@@ -20,51 +21,58 @@ function About() {
           nuevos desafíos.
         </p>
       </div>
-      <div className="w-10/12 flex flex-col py-8 justify-start lg:flex-row">
-        <div className="w-11/12 mx-auto my-10 lg:w-1/2 flex flex-col lg:mr-10">
+      <div className="w-10/12 md:w-9/12 flex flex-col py-8 justify-start lg:flex-row">
+        <div className="w-full mx-auto my-10 lg:w-1/2 flex flex-col lg:mr-10">
           <h2 className="text-center lg:text-left text-yellow-400 dark:text-yellow-400 text-3xl pb-6">
             Datos Personales
           </h2>
-          <div className="w-11/12  mx-auto h-auto flex flex-col md:w-full">
-            <div className="w-full my-4 flex flex-col justify-between md:flex-row md:my-0">
-              <h3 className="w-6/12 my-2 text-3xl md:text-xl">Teléfono</h3>
-              <p className="text-2xl md:text-xl">+54 9 1138612819</p>
+          <div className="w-full  mx-auto h-auto flex flex-col md:w-full">
+            <div className="w-full my-4 flex flex-col justify-between lg:flex-row lg:my-0 lg:items-center">
+              <h3 className="w-6/12 my-2 text-xl md:text-2xl">Teléfono</h3>
+              <p className="text-xl md:text-lg">+54 9 1138612819</p>
             </div>
-            <div className="w-full my-4 flex flex-col justify-between md:flex-row md:my-0">
-              <h3 className="w-6/12 my-2 text-3xl md:text-xl">Email</h3>
-              <p className="text-2xl md:text-xl">mauri.monzon91@gmail.com</p>
+            <div className="w-full my-4 flex flex-col justify-between lg:flex-row lg:my-0 lg:items-center">
+              <h3 className="w-6/12 my-2 text-xl md:text-2xl">Email</h3>
+              <p className="text-xl md:text-lg">mauri.monzon91@gmail.com</p>
             </div>
-            <div className="w-full my-4 flex flex-col justify-between md:flex-row md:my-0">
-              <h3 className="w-6/12 my-2 text-3xl md:text-xl">Dirección</h3>
-              <p className="text-2xl md:text-xl">Buenos Aires, Argentina</p>
+            <div className="w-full my-4 flex flex-col justify-between lg:flex-row lg:my-0 lg:items-center">
+              <h3 className="w-6/12 my-2 text-xl md:text-2xl">Dirección</h3>
+              <p className="text-xl md:text-lg">Buenos Aires, Argentina</p>
             </div>
           </div>
         </div>
-        <div className="w-11/12 mx-auto my-10 lg:w-1/2 flex flex-col lg:mr-10">
+        <div className="w-full mx-auto my-10 lg:w-1/2 flex flex-col lg:ml-20">
           <h3 className="text-center lg:text-left text-yellow-400 dark:text-yellow-400 text-3xl pb-6">
             Intereses
           </h3>
-          <div className="w-full lg:w-8/12 h-auto flex justify-between mx-auto my-auto">
-            <div className="flex flex-col justify-center items-center">
+          <div className="w-full md:w-10/12 h-auto grid grid-cols-2 lg:grid-cols-4 gap-8 mx-auto my-auto">
+            <div className="flex flex-col justify-center items-center py-4">
               <img
                 src={anime}
-                className="w-[110px] h-[110px] lg:w-[60px] lg:h-[60px]"
+                className="w-[90px] h-[90px] lg:w-[60px] lg:h-[60px]"
               />
               <h4>Anime</h4>
             </div>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center py-4">
               <img
                 src={viaje}
-                className="w-[110px] h-[110px] lg:w-[60px] lg:h-[60px]"
+                className="w-[90px] h-[90px] lg:w-[60px] lg:h-[60px]"
               />
               <h4>Viajes</h4>
             </div>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center py-4">
               <img
                 src={gaming}
-                className="w-[110px] h-[110px] lg:w-[60px] lg:h-[60px]"
+                className="w-[90px] h-[90px] lg:w-[60px] lg:h-[60px]"
               />
               <h4>Gaming</h4>
+            </div>
+            <div className="flex flex-col justify-center items-center py-4">
+              <img
+                src={cocina}
+                className="w-[90px] h-[90px] lg:w-[60px] lg:h-[60px]"
+              />
+              <h4>Cocinar</h4>
             </div>
           </div>
         </div>
