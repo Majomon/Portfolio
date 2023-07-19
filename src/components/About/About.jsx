@@ -28,15 +28,15 @@ function About() {
           </h2>
           <div className="w-full  mx-auto h-auto flex flex-col md:w-full">
             <div className="w-full my-4 flex flex-col justify-between lg:flex-row lg:my-0 lg:items-center">
-              <h3 className="w-6/12 my-2 text-xl md:text-2xl">Teléfono</h3>
+              <h3 className="w-6/12 my-2 text-xl md:text-2xl">Teléfono: </h3>
               <p className="text-xl md:text-lg">+54 9 1138612819</p>
             </div>
             <div className="w-full my-4 flex flex-col justify-between lg:flex-row lg:my-0 lg:items-center">
-              <h3 className="w-6/12 my-2 text-xl md:text-2xl">Email</h3>
+              <h3 className="w-6/12 my-2 text-xl md:text-2xl">Email: </h3>
               <p className="text-xl md:text-lg">mauri.monzon91@gmail.com</p>
             </div>
             <div className="w-full my-4 flex flex-col justify-between lg:flex-row lg:my-0 lg:items-center">
-              <h3 className="w-6/12 my-2 text-xl md:text-2xl">Dirección</h3>
+              <h3 className="w-6/12 my-2 text-xl md:text-2xl">Dirección: </h3>
               <p className="text-xl md:text-lg">Buenos Aires, Argentina</p>
             </div>
           </div>
