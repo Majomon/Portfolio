@@ -1,7 +1,7 @@
-import anime from "../../assets/anime.png";
+import bienestar from "../../assets/yoga.png";
 import gaming from "../../assets/gaming.png";
 import viaje from "../../assets/viajes.png";
-import cocina from "../../assets/cocina.png";
+import crypto from "../../assets/crypto.png";
 
 function About() {
   return (
@@ -48,10 +48,10 @@ function About() {
           <div className="w-full md:w-10/12 h-auto grid grid-cols-2 lg:grid-cols-4 gap-8 mx-auto my-auto">
             <div className="flex flex-col justify-center items-center py-4">
               <img
-                src={anime}
+                src={bienestar}
                 className="w-[90px] h-[90px] lg:w-[60px] lg:h-[60px]"
               />
-              <h4>Anime</h4>
+              <h4>Yoga</h4>
             </div>
             <div className="flex flex-col justify-center items-center py-4">
               <img
@@ -69,10 +69,10 @@ function About() {
             </div>
             <div className="flex flex-col justify-center items-center py-4">
               <img
-                src={cocina}
+                src={crypto}
                 className="w-[90px] h-[90px] lg:w-[60px] lg:h-[60px]"
               />
-              <h4>Cocinar</h4>
+              <h4>Cryptos</h4>
             </div>
           </div>
         </div>

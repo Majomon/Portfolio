@@ -141,7 +141,7 @@ const Home = () => {
         {/* Button Contact */}
         <div className="w-full flex justify-center md:justify-start">
           <button
-            className="flex w-32 bg-yellow-400 hover:bg-yellow-600 rounded-lg p-2"
+            className="flex w-32 bg-yellow-400 hover:bg-yellow-300 rounded-lg p-2 mx-6"
             type="button"
           >
             <Link
@@ -153,6 +153,19 @@ const Home = () => {
             >
               <span>Contactame</span>
             </Link>
+          </button>
+          <button
+            className="flex w-32 bg-yellow-400 hover:bg-yellow-300 rounded-lg p-2"
+            type="button"
+          >
+            <a
+              href="https://docs.google.com/document/d/1O0pTiSyaPxHDL86wrXmFrj7SwdvqZUEHhNj2pLZMXRo/edit?usp=sharing"
+              className="w-full h-full"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Cv</span>
+            </a>
           </button>
         </div>
       </div>
