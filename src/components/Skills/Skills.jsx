@@ -7,6 +7,8 @@ import Js from "../../assets/skills/JS.png";
 import React from "../../assets/skills/React.png";
 import ReactNative from "../../assets/skills/ReactNative.png";
 import Postgress from "../../assets/skills/Postgress.png";
+import MongoDb from "../../assets/skills/Mongo.png";
+import Nextjs from "../../assets/skills/Nextjs.png";
 import Redux from "../../assets/skills/Redux.png";
 import Node from "../../assets/skills/NodeJs.png";
 import Git from "../../assets/skills/GIT.png";
@@ -34,7 +36,9 @@ const techsIcons = [
   },
   { name: "React", img: React, url: "https://es.react.dev/" },
   { name: "React Native", img: ReactNative, url: "https://reactnative.dev/" },
+  { name: "Next Js", img: Nextjs, url: "https://nextjs.org/" },
   { name: "Postgress", img: Postgress, url: "https://www.postgresql.org/" },
+  { name: "MongoDb", img: MongoDb, url: "https://www.mongodb.com/es" },
   { name: "Redux", img: Redux, url: "https://redux.js.org/" },
   { name: "Node", img: Node, url: "https://nodejs.org/es" },
   { name: "Git", img: Git, url: "https://git-scm.com/" },
