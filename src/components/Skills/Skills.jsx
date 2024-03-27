@@ -1,58 +1,58 @@
 import { motion } from "framer-motion";
 
 // Images
-import HTML from "../../assets/skills/HTML.png";
+import Bootstrap from "../../assets/skills/Bootstrap.png";
 import CSS from "../../assets/skills/CSS.png";
+import Firebase from "../../assets/skills/Firebase.png";
+import Git from "../../assets/skills/GIT.png";
+import HTML from "../../assets/skills/HTML.png";
 import Js from "../../assets/skills/JS.png";
-import React from "../../assets/skills/React.png";
-import ReactNative from "../../assets/skills/ReactNative.png";
-import Postgress from "../../assets/skills/Postgress.png";
 import MongoDb from "../../assets/skills/Mongo.png";
 import Nextjs from "../../assets/skills/Nextjs.jpg";
-import Redux from "../../assets/skills/Redux.png";
 import Node from "../../assets/skills/NodeJs.png";
-import Git from "../../assets/skills/GIT.png";
-import Bootstrap from "../../assets/skills/Bootstrap.png";
-import Tailwind from "../../assets/skills/Tailwind.png";
+import Postgress from "../../assets/skills/Postgress.png";
+import React from "../../assets/skills/React.png";
+import ReactNative from "../../assets/skills/ReactNative.png";
+import Redux from "../../assets/skills/Redux.png";
 import Sass from "../../assets/skills/Sass.png";
-import Zustand from "../../assets/skills/Zustand.jpg"
 import Sequelize from "../../assets/skills/Sequelize.png";
-import Firebase from "../../assets/skills/Firebase.png";
+import Tailwind from "../../assets/skills/Tailwind.png";
+import Zustand from "../../assets/skills/Zustand.jpg";
 
 const techsIcons = [
-  {
-    name: "HTML",
-    img: HTML,
-    url: "https://developer.mozilla.org/es/docs/Web/HTML",
-  },
+  { name: "Bootstrap", img: Bootstrap, url: "https://getbootstrap.com/" },
   {
     name: "CSS",
     img: CSS,
     url: "https://developer.mozilla.org/es/docs/Web/CSS",
   },
   {
-    name: "Javascript",
-    img: Js,
-    url: "https://developer.mozilla.org/es/docs/Web/JavaScript",
-  },
-  { name: "React", img: React, url: "https://es.react.dev/" },
-  { name: "React Native", img: ReactNative, url: "https://reactnative.dev/" },
-  { name: "Next Js", img: Nextjs, url: "https://nextjs.org/" },
-  { name: "Postgress", img: Postgress, url: "https://www.postgresql.org/" },
-  { name: "MongoDb", img: MongoDb, url: "https://www.mongodb.com/es" },
-  { name: "Redux", img: Redux, url: "https://redux.js.org/" },
-  { name: "Zustand", img: Zustand, url: "https://zustand-demo.pmnd.rs/" },
-  { name: "Node", img: Node, url: "https://nodejs.org/es" },
-  { name: "Git", img: Git, url: "https://git-scm.com/" },
-  { name: "Bootstrap", img: Bootstrap, url: "https://getbootstrap.com/" },
-  { name: "Tailwind", img: Tailwind, url: "https://tailwindcss.com/" },
-  { name: "Sass", img: Sass, url: "https://sass-lang.com/" },
-  { name: "Sequelize", img: Sequelize, url: "https://sequelize.org/" },
-  {
     name: "Firebase",
     img: Firebase,
     url: "https://firebase.google.com/?hl=es",
   },
+  { name: "Git", img: Git, url: "https://git-scm.com/" },
+  {
+    name: "HTML",
+    img: HTML,
+    url: "https://developer.mozilla.org/es/docs/Web/HTML",
+  },
+  {
+    name: "Javascript",
+    img: Js,
+    url: "https://developer.mozilla.org/es/docs/Web/JavaScript",
+  },
+  { name: "MongoDb", img: MongoDb, url: "https://www.mongodb.com/es" },
+  { name: "Next Js", img: Nextjs, url: "https://nextjs.org/" },
+  { name: "Node", img: Node, url: "https://nodejs.org/es" },
+  { name: "Postgress", img: Postgress, url: "https://www.postgresql.org/" },
+  { name: "React", img: React, url: "https://es.react.dev/" },
+  { name: "React Native", img: ReactNative, url: "https://reactnative.dev/" },
+  { name: "Redux", img: Redux, url: "https://redux.js.org/" },
+  { name: "Sass", img: Sass, url: "https://sass-lang.com/" },
+  { name: "Sequelize", img: Sequelize, url: "https://sequelize.org/" },
+  { name: "Tailwind", img: Tailwind, url: "https://tailwindcss.com/" },
+  { name: "Zustand", img: Zustand, url: "https://zustand-demo.pmnd.rs/" },
 ];
 
 const Skills = () => {
