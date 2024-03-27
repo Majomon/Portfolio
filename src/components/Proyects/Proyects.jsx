@@ -6,13 +6,27 @@ import ecommerceReact from "../../assets/proyects/ecommerceReact.png";
 import Rickymorty from "../../assets/proyects/rickAndMorty.png";
 import pokemon from "../../assets/proyects/pokemon.png";
 import cineGo from "../../assets/proyects/cineGo.png";
+import ruslux from "../../assets/proyects/ruslux.png";
+import teza from "../../assets/proyects/teza.png";
 
 const projects = [
   {
-    name: "CineGo - Proyecto Grupal",
+    name: "TezaShoes - Ecommerce",
+    image: teza,
+    url_github: "https://github.com/Majomon/TezaShoes",
+    url_deploy: "https://teza-shoes-c.vercel.app",
+  },
+  {
+    name: "Ruslux - Inmobiliaria",
+    image: ruslux,
+    url_github: "https://github.com/Majomon/InmobiliariaApp",
+    url_deploy: "https://inmobiliaria-client.vercel.app",
+  },
+  {
+    name: "CineGo",
     image: cineGo,
-    url_github: "https://github.com/sebatora/CineGO",
-    url_deploy: "https://cine-go-ten.vercel.app",
+    url_github: "https://github.com/Majomon/CineGo-v2-dev",
+    url_deploy: "https://cine-go-v2-client.vercel.app",
   },
   {
     name: "Pokeapi",
