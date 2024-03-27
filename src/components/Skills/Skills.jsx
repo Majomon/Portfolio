@@ -8,7 +8,7 @@ import React from "../../assets/skills/React.png";
 import ReactNative from "../../assets/skills/ReactNative.png";
 import Postgress from "../../assets/skills/Postgress.png";
 import MongoDb from "../../assets/skills/Mongo.png";
-import Nextjs from "../../assets/skills/Nextjs.png";
+import Nextjs from "../../assets/skills/Nextjs.jpg";
 import Redux from "../../assets/skills/Redux.png";
 import Node from "../../assets/skills/NodeJs.png";
 import Git from "../../assets/skills/GIT.png";
