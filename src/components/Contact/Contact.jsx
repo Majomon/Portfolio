@@ -1,13 +1,11 @@
 import { useRef, useState } from "react";
-import emailjs from "emailjs-com";
 import Lottie from "lottie-react";
 import contactAnimation from "../../assets/animations/contact.json";
 import { validation } from "../../utils/validations";
 import { Toaster, toast } from "react-hot-toast";
+import { Resend } from "resend";
 
-const SERVICE_ID = "service_x3wz0id";
-const TEMPLATE_ID = "template_pgxyzkq";
-const PUBLIC_KEY = "dBBdC0a-MKeJ1opRx";
+const resend = new Resend("re_5qdKcdyE_FtjVrkz9yX5ZY7ZB4uv1hAwq");
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -36,7 +34,7 @@ const Contact = () => {
     );
   };
 
-  const sendEmail = (event) => {
+  const sendEmail = async (event) => {
     event.preventDefault();
 
     const existingErrors = Object.values(errors).some(
@@ -46,17 +44,26 @@ const Contact = () => {
       toast.error("All fields are required.");
       return;
     }
-    emailjs
-      .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
-      .then((response) => {
-        setFormData({
-          name: "",
-          email: "",
-          message: "",
-        });
-        toast.success("Your message send correctly.");
-        console.log(response);
+
+    const { data, error } = await resend.emails.send({
+      from: "Acme <onboarding@resend.dev>",
+      to: ["delivered@resend.dev"],
+      subject: "Contact Form Submission",
+      html: `<p>Name: ${formData.name}</p><p>Email: ${formData.email}</p><p>Message: ${formData.message}</p>`,
+    });
+
+    if (error) {
+      toast.error("Error sending message. Please try again later.");
+      console.error({ error });
+    } else {
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
       });
+      toast.success("Your message has been sent successfully.");
+      console.log({ data });
+    }
   };
 
   return (
