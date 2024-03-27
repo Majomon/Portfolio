@@ -15,6 +15,7 @@ import Git from "../../assets/skills/GIT.png";
 import Bootstrap from "../../assets/skills/Bootstrap.png";
 import Tailwind from "../../assets/skills/Tailwind.png";
 import Sass from "../../assets/skills/Sass.png";
+import Zustand from "../../assets/skills/Zustand.jpg"
 import Sequelize from "../../assets/skills/Sequelize.png";
 import Firebase from "../../assets/skills/Firebase.png";
 
@@ -40,6 +41,7 @@ const techsIcons = [
   { name: "Postgress", img: Postgress, url: "https://www.postgresql.org/" },
   { name: "MongoDb", img: MongoDb, url: "https://www.mongodb.com/es" },
   { name: "Redux", img: Redux, url: "https://redux.js.org/" },
+  { name: "Zustand", img: Zustand, url: "https://zustand-demo.pmnd.rs/" },
   { name: "Node", img: Node, url: "https://nodejs.org/es" },
   { name: "Git", img: Git, url: "https://git-scm.com/" },
   { name: "Bootstrap", img: Bootstrap, url: "https://getbootstrap.com/" },
