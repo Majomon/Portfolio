@@ -3,9 +3,6 @@ import Lottie from "lottie-react";
 import contactAnimation from "../../assets/animations/contact.json";
 import { validation } from "../../utils/validations";
 import { Toaster, toast } from "react-hot-toast";
-import { Resend } from "resend";
-
-const resend = new Resend("re_5qdKcdyE_FtjVrkz9yX5ZY7ZB4uv1hAwq");
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -45,29 +42,32 @@ const Contact = () => {
       return;
     }
 
-    const { data, error } = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: ["mauri.monzon91@gmail.com"],
-      subject: "Contacto desde mi Portfolio",
-      html: `<p>Name: ${formData.name}</p><p>Email: ${formData.email}</p><p>Message: ${formData.message}</p>`,
-    });
+    try {
+      const response = await fetch(
+        "https://porfolio-back.vercel.app/resendEmail",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
-    if (error) {
-      toast.error("Error sending message. Please try again later.");
-      console.error({ error });
-    } else {
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
-      toast.success("Your message has been sent successfully.");
-      console.log({ data });
+      if (!response.ok) {
+        throw new Error("Failed to send email");
+      }
+
+      toast.success("Email sent successfully!");
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast.error("Failed to send email. Please try again later.");
     }
   };
 
   return (
     <div className="Contact">
+      <Toaster position="bottom-center"/>
       <div className="w-full flex flex-col items-center justify-center text-center">
         <h2 className="w-48text-center text-yellow-400 dark:text-yellow-300 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
           Contactame
@@ -245,7 +245,6 @@ const Contact = () => {
               <span className="w-full">Enviar</span>
             </button>
           </form>
-          <Toaster position="bottom-center" reverseOrder={false} />
         </div>
       </div>
     </div>
