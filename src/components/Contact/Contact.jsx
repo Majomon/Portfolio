@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import Lottie from "lottie-react";
 import contactAnimation from "../../assets/animations/contact.json";
 import { validation } from "../../utils/validations";
-import { Toaster, toast } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -57,8 +57,12 @@ const Contact = () => {
       if (!response.ok) {
         throw new Error("Failed to send email");
       }
-
-      toast.success("Email sent successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+      toast.success("En breve te respondere. Gracias por contactarte!");
     } catch (error) {
       console.error("Error sending email:", error);
       toast.error("Failed to send email. Please try again later.");
@@ -67,7 +71,6 @@ const Contact = () => {
 
   return (
     <div className="Contact">
-      <Toaster position="bottom-center"/>
       <div className="w-full flex flex-col items-center justify-center text-center">
         <h2 className="w-48text-center text-yellow-400 dark:text-yellow-300 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
           Contactame
