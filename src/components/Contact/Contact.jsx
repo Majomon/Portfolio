@@ -47,8 +47,8 @@ const Contact = () => {
 
     const { data, error } = await resend.emails.send({
       from: "Acme <onboarding@resend.dev>",
-      to: ["delivered@resend.dev"],
-      subject: "Contact Form Submission",
+      to: ["mauri.monzon91@gmail.com"],
+      subject: "Contacto desde mi Portfolio",
       html: `<p>Name: ${formData.name}</p><p>Email: ${formData.email}</p><p>Message: ${formData.message}</p>`,
     });
 
