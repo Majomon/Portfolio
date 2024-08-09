@@ -14,7 +14,7 @@ const projects = [
     name: "TezaShoes - Ecommerce",
     image: teza,
     url_github: "https://github.com/Majomon/TezaShoes",
-    url_deploy: "https://teza-shoes-c.vercel.app",
+    url_deploy: "https://teza-shoes.vercel.app/",
   },
   {
     name: "Ruslux - Inmobiliaria",
