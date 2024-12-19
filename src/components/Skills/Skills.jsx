@@ -3,12 +3,14 @@ import { motion } from "framer-motion";
 // Images
 import Bootstrap from "../../assets/skills/Bootstrap.png";
 import CSS from "../../assets/skills/CSS.png";
+import Express from "../../assets/skills/Express.png";
 import Firebase from "../../assets/skills/Firebase.png";
 import Git from "../../assets/skills/GIT.png";
 import HTML from "../../assets/skills/HTML.png";
 import Js from "../../assets/skills/JS.png";
 import MongoDb from "../../assets/skills/Mongo.png";
-import Nextjs from "../../assets/skills/Nextjs.jpg";
+import Nestjs from "../../assets/skills/Nestjs.png";
+import Nextjs from "../../assets/skills/Nextjs.png";
 import Node from "../../assets/skills/NodeJs.png";
 import Postgress from "../../assets/skills/Postgress.png";
 import React from "../../assets/skills/React.png";
@@ -17,7 +19,7 @@ import Redux from "../../assets/skills/Redux.png";
 import Sass from "../../assets/skills/Sass.png";
 import Sequelize from "../../assets/skills/Sequelize.png";
 import Tailwind from "../../assets/skills/Tailwind.png";
-import Zustand from "../../assets/skills/Zustand.jpg";
+import Zustand from "../../assets/skills/Zustand.png";
 
 const techsIcons = [
   { name: "Bootstrap", img: Bootstrap, url: "https://getbootstrap.com/" },
@@ -25,6 +27,11 @@ const techsIcons = [
     name: "CSS",
     img: CSS,
     url: "https://developer.mozilla.org/es/docs/Web/CSS",
+  },
+  {
+    name: "Express",
+    img: Express,
+    url: "https://expressjs.com",
   },
   {
     name: "Firebase",
@@ -43,6 +50,7 @@ const techsIcons = [
     url: "https://developer.mozilla.org/es/docs/Web/JavaScript",
   },
   { name: "MongoDb", img: MongoDb, url: "https://www.mongodb.com/es" },
+  { name: "Nest Js", img: Nestjs, url: "https://nestjs.com" },
   { name: "Next Js", img: Nextjs, url: "https://nextjs.org/" },
   { name: "Node", img: Node, url: "https://nodejs.org/es" },
   { name: "Postgress", img: Postgress, url: "https://www.postgresql.org/" },

@@ -6,22 +6,20 @@ import crypto from "../../assets/crypto.png";
 function About() {
   return (
     <div className="About">
-      <div className="w-10/12 md:w-9/12">
+      <div className="w-10/12 md:w-5/12 flex flex-col justify-center">
         <h2 className="w-64 text-center text-yellow-400 dark:text-yellow-400 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
           Sobre mí
         </h2>
-        <p>
-          <span className="text-yellow-400 dark:text-yellow-400 text-left">
-            Hola, mi nombre es Mauricio Monzón.
-          </span>
-          Soy un desarrollador Full Stack. Poseo habilidades en trabajo en
-          equipo, resolución de problemas y conocimientos en tecnologías como
-          React, Redux, Express, Sequelize y PostgreSQL entre otras. Me encantan
-          el mundo de la programación, resolver situaciones, aprender y tomar
-          nuevos desafíos.
+        <p className="text-lg">
+          Hola, mi nombre es{" "}
+          <span className="text-yellow-400">Mauricio Monzón</span>, soy
+          Desarrollador Web Full Stack y Desarrollador Mobile. Me gusta crear
+          soluciones eficientes y afrontar nuevos desafíos. Con experiencia en
+          tecnologías como React, Nextjs, Redux, Zustand, Express, Nestjs,
+          Mongodb, PostgreSQL, React native Cli y Expo.
         </p>
       </div>
-      <div className="w-10/12 md:w-9/12 flex flex-col py-8 justify-start lg:flex-row">
+      <div className="w-10/12 md:w-9/12 flex flex-col py-8 lg:flex-row">
         <div className="w-full mx-auto my-10 lg:w-1/2 flex flex-col lg:mr-10">
           <h2 className="text-center lg:text-left text-yellow-400 dark:text-yellow-400 text-3xl pb-6">
             Datos Personales

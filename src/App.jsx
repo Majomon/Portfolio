@@ -13,7 +13,7 @@ function App() {
       <Toaster position="top-center" />
       <Navbar />
       <Home />
-      <About />
+      {/* <About /> */}
       <Skills />
       <Proyects />
       <Contact />
