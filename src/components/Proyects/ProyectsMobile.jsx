@@ -1,76 +1,16 @@
 import { motion } from "framer-motion";
+import { projectsWebs } from "../../constants/ProyectsWeb.js";
 
-import pardosera from "../../assets/proyects/pardosera.png";
-import ecommerceJs from "../../assets/proyects/ecommerceJS.png";
-import ecommerceReact from "../../assets/proyects/ecommerceReact.png";
-import Rickymorty from "../../assets/proyects/rickAndMorty.png";
-import pokemon from "../../assets/proyects/pokemon.png";
-import cineGo from "../../assets/proyects/cineGo.png";
-import ruslux from "../../assets/proyects/ruslux.png";
-import teza from "../../assets/proyects/teza.png";
-
-const projects = [
-  {
-    name: "TezaShoes - Ecommerce",
-    image: teza,
-    url_github: "https://github.com/Majomon/TezaShoes",
-    url_deploy: "https://teza-shoes.vercel.app/",
-  },
-  {
-    name: "Ruslux - Inmobiliaria",
-    image: ruslux,
-    url_github: "https://github.com/Majomon/InmobiliariaApp",
-    url_deploy: "https://inmobiliaria-client.vercel.app",
-  },
-  {
-    name: "CineGo",
-    image: cineGo,
-    url_github: "https://github.com/Majomon/CineGo-v2-dev",
-    url_deploy: "https://cine-go-v2-client.vercel.app",
-  },
-  {
-    name: "Pokeapi",
-    image: pokemon,
-    url_github: "https://github.com/Majomon/PI-Pokemon",
-    url_deploy: "https://pokemon-client-five.vercel.app/",
-  },
-  {
-    name: "Rick & Morty",
-    image: Rickymorty,
-    url_github: "https://github.com/Majomon/rickAndMorty",
-    url_deploy: "https://rick-and-morty-client-vert.vercel.app/",
-  },
-  {
-    name: "Ecommerce React",
-    image: ecommerceReact,
-    url_github: "https://github.com/Majomon/jabones-y-velas-monzon-mauricio",
-    url_deploy: "https://jabones-y-velas.vercel.app/",
-  },
-  {
-    name: "Ecommerce Js",
-    image: ecommerceJs,
-    url_github: "https://github.com/Majomon/ProyectoFinalJS",
-    url_deploy: "https://proyecto-final-js-zeta.vercel.app/",
-  },
-  {
-    name: "Pardosera - HTML/CSS",
-    image: pardosera,
-    url_github: "https://github.com/Majomon/pardosera",
-    url_deploy: "https://pardosera.vercel.app/",
-  },
-];
-
-const Proyects = () => {
+const ProyectsMobile = () => {
   return (
     <div className="Proyects">
       <div className="w-full flex flex-col items-center">
-        <h2 className="w-72 text-center text-yellow-400 dark:text-yellow-400 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
-          Proyectos
+        <h2 className="w-96 text-center text-yellow-400 dark:text-yellow-400 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
+          Proyectos Mobile
         </h2>
-        <h4 className="pb-8 text-center ">Algunos de mis trabajos recientes</h4>
       </div>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {projects.map((project, index) => (
+        {projectsWebs.map((project, index) => (
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", duration: 1 }}
@@ -156,4 +96,4 @@ const Proyects = () => {
   );
 };
 
-export default Proyects;
+export default ProyectsMobile;
