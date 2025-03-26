@@ -1,18 +1,21 @@
-import pardosera from "../assets/proyects/pardosera.png";
-import ecommerceJs from "../assets/proyects/ecommerceJS.png";
-import ecommerceReact from "../assets/proyects/ecommerceReact.png";
-import Rickymorty from "../assets/proyects/rickAndMorty.png";
-import pokemon from "../assets/proyects/pokemon.png";
+import cataGo from "../assets/proyects/cataGo.png";
 import cineGo from "../assets/proyects/cineGo.png";
+import pokemon from "../assets/proyects/pokemon.png";
 import ruslux from "../assets/proyects/ruslux.png";
 import teza from "../assets/proyects/teza.png";
 
 export const projectsWebs = [
   {
+    name: "CataGo - Ecommerce",
+    image: cataGo,
+    url_github: "https://github.com/Majomon/Next-CatalogoWeb",
+    url_deploy: "https://next-catalogo-web.vercel.app",
+  },
+  {
     name: "TezaShoes - Ecommerce",
     image: teza,
     url_github: "https://github.com/Majomon/TezaShoes",
-    url_deploy: "https://teza-shoes.vercel.app/",
+    url_deploy: "https://teza-shoes.vercel.app",
   },
   {
     name: "Ruslux - Inmobiliaria",
@@ -30,7 +33,7 @@ export const projectsWebs = [
     name: "Pokeapi",
     image: pokemon,
     url_github: "https://github.com/Majomon/PI-Pokemon",
-    url_deploy: "https://pokemon-client-five.vercel.app/",
+    url_deploy: "https://pokemon-client-five.vercel.app",
   },
   /*  {
       name: "Rick & Morty",
