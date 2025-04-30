@@ -132,7 +132,7 @@ const Home = () => {
             type="button"
           >
             <a
-              href="https://docs.google.com/document/d/1O0pTiSyaPxHDL86wrXmFrj7SwdvqZUEHhNj2pLZMXRo/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1krXgTHrrNiTfHHBL24EE8hfHQ5xC-DrTQ-uKYok1cFk/edit?usp=sharing"
               className="w-full h-full"
               target="_blank"
               rel="noopener noreferrer"
