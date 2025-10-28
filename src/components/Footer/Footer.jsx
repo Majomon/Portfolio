@@ -37,7 +37,7 @@ const Footer = () => {
         </a>
         {/* Youtube */}
         <a
-          href="https://www.youtube.com/@consollo6692"
+          href="https://www.youtube.com/@MauriCode"
           target="_blank"
           rel="noopener noreferrer"
         >

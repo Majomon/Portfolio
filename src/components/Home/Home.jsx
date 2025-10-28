@@ -60,7 +60,7 @@ const Home = () => {
             {/* Youtube */}
             <li className=" md:ml-10">
               <a
-                href="https://www.youtube.com/@consollo6692"
+                href="https://www.youtube.com/@MauriCode"
                 target="_blank"
                 rel="noopener noreferrer"
               >

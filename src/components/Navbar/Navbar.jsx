@@ -1,6 +1,6 @@
-import { Link } from "react-scroll";
-import Logo from "../../assets/portfolio.png";
 import { useEffect, useState } from "react";
+import { Link } from "react-scroll";
+import Logo2 from "../../assets/logoPortfolio.png";
 
 const options = [
   { name: "Inicio", to: "Home" },
@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="Navbar">
+      <nav className="Navbar lg:px-32">
         {/* Logo */}
         <div className="w-full m-4">
           <Link
@@ -38,7 +38,7 @@ const Navbar = () => {
             spy={true}
             duration={500}
           >
-            <img src={Logo} alt="Logo" className="dark:bg-white rounded-lg" />
+            <img src={Logo2} alt="Logo" className="dark:bg-white rounded-lg" />
           </Link>
         </div>
 
@@ -86,14 +86,14 @@ const Navbar = () => {
         <div className="w-full hidden lg:flex justify-between">
           {options.map((option, index) => (
             <Link
-              className="w-full flex justify-center border-r last:border-r-0"
               key={index}
               to={option.to}
               smooth={true}
               spy={true}
               duration={500}
+              className="flex-1 min-w-[120px] flex justify-center border-r last:border-r-0"
             >
-              <button className="w-full" type="button">
+              <button className="w-full whitespace-nowrap" type="button">
                 <span>{option.name}</span>
               </button>
             </Link>

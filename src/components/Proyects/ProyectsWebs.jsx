@@ -1,99 +1,106 @@
 import { motion } from "framer-motion";
 import { projectsWebs } from "../../constants/ProyectsWeb.js";
 
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
+};
+
 const ProyectsWebs = () => {
   return (
-    <div className="Proyects">
-      <div className="w-full flex flex-col items-center">
-        <h2 className="w-96 text-center text-yellow-400 dark:text-yellow-400 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
-          Proyectos Webs
+    <section className="Proyects py-16">
+      {/* Sección de título con animación */}
+      <motion.div
+        initial={{ opacity: 0, y: -40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="text-center mb-14"
+      >
+        <h2 className="relative inline-block text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200 tracking-tight">
+          Proyectos Web
+          <motion.span
+            className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 to-yellow-200 rounded-full"
+            initial={{ width: 0 }}
+            whileInView={{ width: "100%" }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+          />
         </h2>
-        <h4 className="pb-8 text-center ">Algunos de mis trabajos recientes</h4>
-      </div>
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mt-6 text-gray-600 text-lg max-w-2xl mx-auto"
+        >
+          Algunos de mis trabajos recientes desarrollados con tecnologías
+          modernas y enfoque en experiencia de usuario.
+        </motion.p>
+      </motion.div>
+
+      {/* Grilla de proyectos */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projectsWebs.map((project, index) => (
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 200, damping: 15 }}
-            className="relative mx-2 group flex flex-col justify-center items-center rounded-lg hover:bg-slate-900 border-2 border-slate-300 dark:border-yellow-400"
+          <motion.figure
             key={index}
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="show"
+            whileHover={{ scale: 1.03 }}
+            viewport={{ once: true }}
+            transition={{ type: "spring", stiffness: 150, damping: 12 }}
+            className="relative group overflow-hidden rounded-2xl border border-slate-600 dark:border-yellow-400/50 shadow-lg hover:shadow-yellow-400/20 transition-all duration-300"
           >
+            {/* Imagen */}
             <img
-              className="opacity-100 group-hover:opacity-0 rounded-lg transition-opacity duration-300 ease-in-out"
               src={project.image}
-              alt={project.name}
+              alt={`Vista previa del proyecto ${project.name}`}
+              className="w-full h-full object-cover rounded-2xl transition-all duration-300 group-hover:blur-sm group-hover:brightness-75"
             />
-            {project.url_github && (
-              <>
-                <motion.h2 className="absolute opacity-0 pl-2 select-none group-hover:opacity-100 text-white border-l-8 border-yellow-400 transition-opacity duration-300 ease-in-out">
-                  {project.name}
-                </motion.h2>
 
-                {/* Botón Github */}
-                <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  className="absolute opacity-0 group-hover:opacity-100 left-0 bottom-0 m-4 hover:bg-white/70 stroke-white hover:stroke-black hover:dark:stroke-black rounded-full p-1 transition-opacity duration-300 ease-in-out"
-                  type="button"
-                >
-                  <a
-                    href={project.url_github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="icon icon-tabler icon-tabler-brand-github"
-                      width="25"
-                      height="25"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-                    </svg>
-                  </a>
-                </motion.button>
+            {/* Overlay con info */}
+            <figcaption className="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center px-6">
+              <motion.h3
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="text-2xl font-semibold text-white mb-4 border-l-8 border-yellow-400 pl-3"
+              >
+                {project.name}
+              </motion.h3>
 
-                {/* Botón Deploy */}
-                <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  className="absolute opacity-0 group-hover:opacity-100 right-0 bottom-0 m-4 hover:bg-white/70 stroke-white hover:stroke-black hover:dark:stroke-black rounded-full p-1 transition-opacity duration-300 ease-in-out"
-                  type="button"
+              <motion.a
+                href={project.url_deploy}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Visitar ${project.name}`}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 200, damping: 18 }}
+                className="flex items-center gap-2 bg-yellow-400 text-black font-medium px-5 py-2 rounded-full hover:bg-yellow-300 transition-colors duration-200"
+              >
+                Ver proyecto
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  <a
-                    href={project.url_deploy}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="icon icon-tabler icon-tabler-external-link"
-                      width="25"
-                      height="25"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
-                      <path d="M11 13l9 -9" />
-                      <path d="M15 4h5v5" />
-                    </svg>
-                  </a>
-                </motion.button>
-              </>
-            )}
-          </motion.div>
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                  <path d="M11 13l9 -9" />
+                  <path d="M15 4h5v5" />
+                </svg>
+              </motion.a>
+            </figcaption>
+          </motion.figure>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,62 +1,39 @@
-import cataGo from "../assets/proyects/cataGo.png";
-import cineGo from "../assets/proyects/cineGo.png";
-import pokemon from "../assets/proyects/pokemon.png";
-import ruslux from "../assets/proyects/ruslux.png";
-import teza from "../assets/proyects/teza.png";
+import proyectoMueble from "../assets/proyects/proyectoMueble.webp";
+import distrisur from "../assets/proyects/distrisur.webp";
+import fotonube from "../assets/proyects/fotonube.webp";
+import gasCabre from "../assets/proyects/gasCabre.webp";
+import teza from "../assets/proyects/teza.webp";
+import tattoo from "../assets/proyects/tattoo.webp";
 
 export const projectsWebs = [
   {
-    name: "CataGo - Ecommerce",
-    image: cataGo,
-    url_github: "https://github.com/Majomon/Next-CatalogoWeb",
-    url_deploy: "https://next-catalogo-web.vercel.app",
+    name: "Proyecto Mueble - Youtuber",
+    image: proyectoMueble,
+    url_deploy: "https://proyectomueble.com.ar",
   },
   {
-    name: "TezaShoes - Ecommerce",
+    name: "Distribuidora Mayorista",
+    image: distrisur,
+    url_deploy: "https://nextjs-distri-sur.vercel.app",
+  },
+  {
+    name: "Fotonube - Marketplace de Fotografía",
+    image: fotonube,
+    url_deploy: "https://fotonube.com",
+  },
+  {
+    name: "Gascabre - Tatuador",
+    image: gasCabre,
+    url_deploy: "https://www.gascabre.com",
+  },
+  {
+    name: "E-commerce de Moda - Teza",
     image: teza,
-    url_github: "https://github.com/Majomon/TezaShoes",
     url_deploy: "https://teza-shoes.vercel.app",
   },
   {
-    name: "Ruslux - Inmobiliaria",
-    image: ruslux,
-    url_github: "https://github.com/Majomon/InmobiliariaApp",
-    url_deploy: "https://inmobiliaria-client.vercel.app",
+    name: "Tattoo Studio Landing",
+    image: tattoo,
+    url_deploy: "https://next-landing-tattoo.vercel.app",
   },
-  {
-    name: "CineGo",
-    image: cineGo,
-    url_github: "https://github.com/Majomon/CineGo-v2-dev",
-    url_deploy: "https://cine-go-v2-client.vercel.app",
-  },
-  {
-    name: "Pokeapi",
-    image: pokemon,
-    url_github: "https://github.com/Majomon/PI-Pokemon",
-    url_deploy: "https://pokemon-client-five.vercel.app",
-  },
-  /*  {
-      name: "Rick & Morty",
-      image: Rickymorty,
-      url_github: "https://github.com/Majomon/rickAndMorty",
-      url_deploy: "https://rick-and-morty-client-vert.vercel.app/",
-    },
-    {
-      name: "Ecommerce React",
-      image: ecommerceReact,
-      url_github: "https://github.com/Majomon/jabones-y-velas-monzon-mauricio",
-      url_deploy: "https://jabones-y-velas.vercel.app/",
-    },
-    {
-      name: "Ecommerce Js",
-      image: ecommerceJs,
-      url_github: "https://github.com/Majomon/ProyectoFinalJS",
-      url_deploy: "https://proyecto-final-js-zeta.vercel.app/",
-    },
-    {
-      name: "Pardosera - HTML/CSS",
-      image: pardosera,
-      url_github: "https://github.com/Majomon/pardosera",
-      url_deploy: "https://pardosera.vercel.app/",
-    }, */
 ];
