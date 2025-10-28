@@ -70,9 +70,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="Contact py-16 lg:w-10/12 lg:mx-auto">
+    <div className="Contact py-16 ">
       <div className="w-full flex flex-col items-center justify-center text-center">
-        <h2 className="w-48text-center text-yellow-400 dark:text-yellow-300 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
+        <h2 className="text-center text-yellow-400 dark:text-yellow-300 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
           Contactame
         </h2>
         <h4 className="pb-8">
@@ -80,7 +80,7 @@ const Contact = () => {
           mensaje.
         </h4>
       </div>
-      <div className="w-full block lg:flex rounded-lg p-6 bg-yellow-300 dark:bg-slate-700 border-2 border-slate-200">
+      <div className="w-10/12 mx-auto block lg:flex rounded-lg sm:p-6 bg-yellow-300 dark:bg-slate-700 border-2 border-slate-200">
         <div className="w-1/2 pr-4 hidden lg:flex flex-col justify-between rounded-l-lg">
           <h1 className="text-center pb-2 dark:text-yellow-300">
             Información de contacto
@@ -164,7 +164,7 @@ const Contact = () => {
             className="w-96 h-72 relative left-0"
           />
         </div>
-        <div className="w-full lg:w-1/2 p-6 rounded-lg bg-white dark:bg-slate-800">
+        <div className="w-full lg:w-1/2 p-2 sm:p-6 rounded-lg bg-white dark:bg-slate-800">
           <form className="flex flex-col" ref={form} onSubmit={sendEmail}>
             <div className="flex flex-col mb-4">
               <label className="text-xl mb-1" htmlFor="name">

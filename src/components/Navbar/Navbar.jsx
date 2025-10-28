@@ -4,7 +4,7 @@ import Logo2 from "../../assets/logoPortfolio.png";
 
 const options = [
   { name: "Inicio", to: "Home" },
-  { name: "Sobre mí", to: "About" },
+  // { name: "Sobre mí", to: "About" },[]
   { name: "Skills", to: "Skills" },
   { name: "Proyectos", to: "Proyects" },
   { name: "Contacto", to: "Contact" },
