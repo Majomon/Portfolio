@@ -3,7 +3,7 @@ import { projectsMobile } from "../../constants/ProyectsMobile.js";
 
 const ProyectsMobile = () => {
   return (
-    <section className="Proyects">
+    <section className="Proyects py-16 lg:w-10/12 lg:mx-auto">
       {/* Título animado */}
       <motion.div
         initial={{ opacity: 0, y: -30 }}

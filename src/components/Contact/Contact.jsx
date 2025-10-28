@@ -70,7 +70,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="Contact">
+    <div className="Contact py-16 lg:w-10/12 lg:mx-auto">
       <div className="w-full flex flex-col items-center justify-center text-center">
         <h2 className="w-48text-center text-yellow-400 dark:text-yellow-300 text-5xl pb-2 mb-6 mx-auto border-b-4 border-yellow-400">
           Contactame
@@ -178,7 +178,7 @@ const Contact = () => {
                 }`}
                 type="text"
                 name="name"
-                placeholder="Luna Herrera"
+                placeholder="Nombre y apellido"
               />
               {errors.name && (
                 <span className="text-red-600 dark:text-red-600">
@@ -198,7 +198,7 @@ const Contact = () => {
                 }`}
                 type="text"
                 name="email"
-                placeholder="luna@gmail.com"
+                placeholder="email@email.com"
               />
               {errors.email && (
                 <span className="text-red-600 dark:text-red-600">

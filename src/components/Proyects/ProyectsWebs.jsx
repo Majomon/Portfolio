@@ -8,7 +8,7 @@ const fadeInUp = {
 
 const ProyectsWebs = () => {
   return (
-    <section className="Proyects py-16">
+    <section className="Proyects py-16 lg:w-10/12 lg:mx-auto">
       {/* Sección de título con animación */}
       <motion.div
         initial={{ opacity: 0, y: -40 }}
