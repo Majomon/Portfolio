@@ -117,7 +117,7 @@ const Home = () => {
 
             <motion.a
               whileHover={{ scale: 1.05 }}
-              href="https://docs.google.com/document/d/1krXgTHrrNiTfHHBL24EE8hfHQ5xC-DrTQ-uKYok1cFk/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1ulcI2v-tP3lr3dkmE4lZVrTs5zG7nevb/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-transparent border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black font-semibold rounded-lg px-6 py-2 transition-all"
