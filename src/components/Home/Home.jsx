@@ -24,7 +24,7 @@ const Home = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.h1
-            className="text-5xl md:text-7xl font-black leading-tight mb-4"
+            className="text-4xl sm:text-5xl md:text-7xl font-black leading-tight mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
@@ -32,8 +32,8 @@ const Home = () => {
             Mauricio <span className="text-yellow-400">Monzón</span>
           </motion.h1>
 
-          <div className="flex items-center gap-3 mb-8">
-            <span className="text-2xl md:text-3xl font-bold text-slate-700 dark:text-slate-300">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-1 md:gap-3 mb-8">
+            <span className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-700 dark:text-slate-300">
               Soy
             </span>
             <TypeAnimation
@@ -52,12 +52,12 @@ const Home = () => {
               speed={50}
               repeat={Infinity}
               wrapper="span"
-              className="text-2xl md:text-3xl text-yellow-500 dark:text-yellow-400 font-extrabold"
+              className="text-xl sm:text-2xl md:text-3xl text-yellow-500 dark:text-yellow-400 font-extrabold uppercase"
             />
           </div>
 
           <motion.p
-            className="text-lg md:text-2xl text-slate-600 dark:text-slate-400 mb-10 max-w-xl leading-relaxed"
+            className="text-base sm:text-lg md:text-2xl text-slate-600 dark:text-slate-400 mb-10 max-w-xl leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
@@ -82,7 +82,7 @@ const Home = () => {
               href="https://wa.me/5491138612819?text=Hola%20Mauri,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary flex items-center gap-8 text-xl px-8 py-4"
+              className="btn-primary flex items-center gap-4 sm:gap-8 text-lg sm:text-xl px-6 sm:px-8 py-4"
             >
               Contáctame
               <svg
@@ -107,7 +107,7 @@ const Home = () => {
               href="https://drive.google.com/file/d/1ulcI2v-tP3lr3dkmE4lZVrTs5zG7nevb/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary text-xl px-8 py-4"
+              className="btn-secondary text-lg sm:text-xl px-6 sm:px-8 py-4"
             >
               Descargar CV
             </a>
@@ -173,7 +173,7 @@ const Home = () => {
 
         {/* Imagen con animación moderna */}
         <motion.div
-          className="w-full md:w-5/12 flex justify-center p-4 lg:p-0"
+          className="hidden md:flex w-full md:w-5/12 justify-center p-4 lg:p-0"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}

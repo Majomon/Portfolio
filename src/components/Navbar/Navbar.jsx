@@ -40,14 +40,14 @@ const Navbar = () => {
             duration={500}
             className="group flex items-center gap-2 cursor-pointer"
           >
-            <div className="w-10 h-10 overflow-hidden rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 group-hover:border-yellow-400 transition-all">
+            <div className="w-8 h-8 sm:w-10 h-10 overflow-hidden rounded-lg sm:rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 group-hover:border-yellow-400 transition-all">
               <img
                 src={Logo2}
                 alt="Logo"
                 className="w-full h-full object-cover"
               />
             </div>
-            <span className="text-xl font-black tracking-tighter text-slate-900 dark:text-white group-hover:text-yellow-400 transition-colors uppercase">
+            <span className="text-lg sm:text-xl font-black tracking-tighter text-slate-900 dark:text-white group-hover:text-yellow-400 transition-colors uppercase">
               Mauri
               <span className="text-yellow-400 group-hover:text-yellow-500">
                 .dev
@@ -112,15 +112,15 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Actions */}
-          <div className="flex lg:hidden items-center gap-4">
+          <div className="flex lg:hidden items-center gap-2 sm:gap-4">
             <button
               onClick={toggleTheme}
-              className="w-10 h-10 flex items-center justify-center rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700"
+              className="w-8 h-8 sm:w-10 h-10 flex items-center justify-center rounded-lg sm:rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700"
             >
               {theme === "light" ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 text-yellow-500"
+                  className="w-4 h-4 sm:w-5 h-5 text-yellow-500"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -135,7 +135,7 @@ const Navbar = () => {
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 text-yellow-400"
+                  className="w-4 h-4 sm:w-5 h-5 text-yellow-400"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
@@ -149,7 +149,7 @@ const Navbar = () => {
             </button>
             <button
               onClick={() => setOpen(!open)}
-              className="w-10 h-10 flex items-center justify-center rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 transition-colors"
+              className="w-8 h-8 sm:w-10 h-10 flex items-center justify-center rounded-lg sm:rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 transition-colors"
             >
               {open ? (
                 <svg
@@ -158,7 +158,7 @@ const Navbar = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={2}
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="w-5 h-5 sm:w-6 h-6"
                 >
                   <path
                     strokeLinecap="round"
@@ -173,7 +173,7 @@ const Navbar = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={2}
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="w-5 h-5 sm:w-6 h-6"
                 >
                   <path
                     strokeLinecap="round"
