@@ -3,22 +3,22 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
-import ProyectsWebs from "./components/Proyects/ProyectsWebs";
-import ProyectsMobile from "./components/Proyects/ProyectsMobile";
+import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <div>
+    <div className="bg-white dark:bg-[#0b1120]">
       <Toaster position="top-center" />
       <Navbar />
-      <Home />
-      {/* <About /> */}
-      <Skills />
-      <ProyectsWebs />
-      <ProyectsMobile />
-      <Contact />
+      <main>
+        <Home />
+        {/* <About /> */}
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );

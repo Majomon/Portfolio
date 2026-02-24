@@ -4,8 +4,25 @@ import fotonube from "../assets/proyects/fotonube.webp";
 import gasCabre from "../assets/proyects/gasCabre.webp";
 import teza from "../assets/proyects/teza.webp";
 import tattoo from "../assets/proyects/tattoo.webp";
+import segimed from "../assets/proyects/segimed.webp";
+import truco from "../assets/proyects/truco.webp";
 
 export const projectsWebs = [
+  {
+    name: "Yosef AI Agent - WhatsApp & Chatwoot",
+    image: segimed, // Placeholder if no specific image
+    url_deploy: "https://github.com/Majomon",
+  },
+  {
+    name: "Rently-MCP - Architecture",
+    image: truco, // Placeholder if no specific image
+    url_deploy: "https://github.com/Majomon",
+  },
+  {
+    name: "Zonaprop Scraper - Automation",
+    image: proyectoMueble, // Placeholder if no specific image
+    url_deploy: "https://github.com/Majomon",
+  },
   {
     name: "Proyecto Mueble - Youtuber",
     image: proyectoMueble,
